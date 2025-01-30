@@ -7,17 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("projectList: ", projectList);
 
   // Fetch (Getting Projects from Github API)
-  fetch("https://api.github.com/users/leusey/repos")
+  fetch(
+    "https://api.open-meteo.com/v1/forecast?latitude=34.0522&longitude=-118.2437&hourly=temperature_2m,rain&temperature_unit=fahrenheit"
+  )
     .then((response) => {
       return response.json();
     })
-    .then((repositories) => {
-      console.log("repositories: ", repositories);
+    .then((weather) => {
+      console.log("weather: ", weather);
 
-      // Loop through repositories array and:
-      for (let i = 0; i < repositories.length; i++) {
+      // Loop through weather array and:
+      for (let i = 0; i < weather.length; i++) {
         // - get specific project data out
-        const project = repositories[i].name;
+        const project = weather[i].name;
         // - create DOM (HTML) elements
         const li = document.createElement("li");
         // - put the data from the project into the DOM element (li)
