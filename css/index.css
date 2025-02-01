@@ -1,4 +1,74 @@
-#Projects ul {
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8b008b;
+  margin: 8px;
+}
+
+#title-header {
+  font-size: 2.5rem;
+  padding: 10px;
+  margin: 20px;
+  background-color: #e6e6fa;
+  text-align: center;
+}
+
+#title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1ch;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-color: #c71585;
+  padding: 8px;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 1em;
+}
+
+#navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#navigation ul li {
+  width: 100%;
+}
+
+#navigation ul li a {
+  display: block;
+  padding: 0.5em 0;
+  background-color: #c71585;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navigation ul li a:hover {
+  background-color: #e6e6fa;
+}
+
+a {
+  color: #00bfff;
+  font-size: 20px;
+}
+
+#weather-section ul {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +78,7 @@
   list-style: none;
 }
 
-#Projects li {
+#weather-section li {
   background-color: #d0bdf452;
   padding: 1rem;
   border: 1px solid #d0bdf4;
@@ -17,7 +87,33 @@
   transition: all 0.3s;
 }
 
-#Projects li:hover {
+#weather-section li:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
+  box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
+  background-color: #c6acf6;
+}
+
+#sun-section ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 100vw;
+  justify-content: center;
+  list-style: none;
+}
+
+#sun-section li {
+  background-color: #d0bdf452;
+  padding: 1rem;
+  border: 1px solid #d0bdf4;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#sun-section li:hover {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
   -moz-box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
   box-shadow: 5px 5px 5px 0px rgba(153, 153, 153, 1);
