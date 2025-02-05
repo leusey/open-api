@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/index.css" rel="stylesheet" />
-    <title>Weather API</title>
+    <title>LA Weather API</title>
   </head>
   <body>
     <nav id="navigation">
       <ul>
-        <li><a href="#weather-section">Daily Temperatures</a></li>
-        <li><a href="#sun-section">Sunrise/Sunset</a></li>
+        <li><button id="weather-btn">Daily Temperatures</button></li>
+        <li><button id="sun-btn">Sunrise/Sunset</button></li>
       </ul>
     </nav>
     <div id="title-container">
-      <h1 id="title-header">Weather API</h1>
+      <h1 id="title-header">LA Weather App</h1>
+    </div>
+    <div id="home-message">
+      <h2>Welcome to the LA Weather App!</h2>
+      <img src="images/weather pic.jpg" id="weather-picture" />
+      <p>
+        Click one of the buttons above to see the latest weather and
+        sunrise/sunset times for Los Angeles.
+      </p>
     </div>
     <section id="weather-section">
-      <h2>Daily Temperatures</h2>
+      <h2 class="section-header">Daily Temperatures</h2>
       <ul></ul>
     </section>
     <section id="sun-section">
-      <h2>Sunrise/Sunset</h2>
+      <h2 class="section-header">Sunrise/Sunset</h2>
       <ul></ul>
     </section>
     <script src="js/index.js"></script>
